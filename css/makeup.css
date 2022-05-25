@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+body{
+    font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.255;
+    font-weight: 300;
+    color:#333;
+    background-color: rgb(217, 247, 237);
+}
+a{
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s;
+}
+a:hover{
+    color: aquamarine;
+}
+/*==chia bố cục cho web==*/
+img#logo{
+    width: 150px;
+    height: auto;
+}
+.header div{
+    display:inline;
+    padding: 5px;
+    margin: 10px;
+
+}
+.header{
+    position: fixed;
+    background-color: #007d43;
+    height: 50px;
+    width: 100%;
+    padding-left: 580px;
+    top:0;
+}
+.menu{
+    position: fixed;
+    background-color:white;
+    height:100%;
+    width:230px;
+    left:340px;
+    top: 10px;
+}
+.content{
+    position:relative;
+    width:1000px;
+    left: 580px;
+    top:45px;
+    background-color: white;
+}
+/*chỉnh sửa menu*/
+.menu ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.menu ul li{
+    /* line-height:3em; */
+    height:3em;
+}
+.menu ul li a{
+    display:block;
+    color:black;
+    padding:1em;
+    padding-top:0;
+    font-weight:600;
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hộp thoại add product */
+div.addProduct{
+    display:none;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(166 171 169);
+}

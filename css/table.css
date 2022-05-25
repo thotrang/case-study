@@ -1,0 +1,46 @@
+/* chỉnh sửa table add product */
+#tableAdd table {
+    border: 1px #333 solid;
+    width: auto;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }
+  div#tableAdd{
+    background-color: rgb(182, 238, 238);
+    display: none;
+    position: absolute;
+    left: 40%;
+    top:10%;
+}
+  /* chỉnh sửa table product */
+.tableProductClass table{
+    border: 1px #333 solid;
+    width: 100%;
+}
+/* chỉnh sửa nút */
+button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  /* chỉnh sửa hàng cột */
+  td #edit, #del{
+    padding: 0;
+    margin: 0;
+  }
