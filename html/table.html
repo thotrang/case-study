@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,14 @@
     <link rel="stylesheet" href="..\css\normalize.css">
     <link rel="stylesheet" href="..\css\table.css">
 </head>
+
 <body>
+    <!-- bảng thêm sản phẩm -->
     <div id="tableAdd">
         <table>
-            <tr><th  colspan="2">THÊM SẢN PHẨM MỚI</th></tr>
+            <tr>
+                <th colspan="2">THÊM SẢN PHẨM MỚI</th>
+            </tr>
             <tr>
                 <td>ID</td>
                 <td><input type="number" id="addId"></td>
@@ -34,7 +39,38 @@
                 <td><input type="text" id="addAmount"></td>
             </tr>
             <tr>
-                <th colspan="2"><button onclick="addProduct()">Add Product</button></th>
+                <th colspan="2"><button onclick="addProduct()">UPDATE</button></th>
+            </tr>
+        </table>
+    </div>
+    <!-- bảng sửa sản phẩm -->
+    <div id="tableEdit">
+        <table>
+            <tr>
+                <th colspan="2">SỬA THÔNG TIN SẢN PHẨM</th>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><input type="number" id="editId"></td>
+            </tr>
+            <tr>
+                <td>Name Product</td>
+                <td><input type="text" id="editName"></td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><input type="text" id="editImage"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="text" id="editPrice"></td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td><input type="text" id="editAmount"></td>
+            </tr>
+            <tr>
+                <th colspan="2" id="showEditProduct"></th>
             </tr>
         </table>
     </div>
@@ -50,17 +86,19 @@
                     <th></th>
                     <th></th>
                 </tr>
-                <tr id="showEditProduct"></tr>
             </thead>
-            <tbody  id="tableProduct">
-                
+            <tbody id="tableProduct">
+
             </tbody>
             <tfoot>
-                <tr><th colspan="7" onclick="blockAdd()">ADD PRODUCT</th></tr> 
+                <tr>
+                    <th colspan="7" onclick="blockAdd()">ADD PRODUCT</th>
+                </tr>
             </tfoot>
         </table>
     </div>
     <script src="..\js\product.js"></script>
     <script src="..\js\main.js"></script>
 </body>
+
 </html>

@@ -39,8 +39,16 @@ button {
     display: inline-block;
     font-size: 16px;
   }
-  /* chỉnh sửa hàng cột */
-  td #edit, #del{
-    padding: 0;
-    margin: 0;
+  /* chỉnh sửa bảng edit */
+  #tableEdit table {
+    border: 1px #333 solid;
+    width: auto;
   }
+  div#tableEdit{
+    background-color: rgb(182, 238, 238);
+    display: none;
+    position: absolute;
+    left: 40%;
+    top:10%;
+}
+
