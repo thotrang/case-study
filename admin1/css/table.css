@@ -78,3 +78,13 @@ div#tableSort{
   height: 80px;
   padding: 0;
 }
+
+/* chỉnh sửa bảng tìm kiếm */
+.tableSearch table{
+  border: 1px #333 solid;
+  width: 1500px;
+  position:absolute;
+  top:500px;
+  left: 210px;
+  display: none;
+}
