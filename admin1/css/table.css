@@ -25,8 +25,11 @@
 }
   /* chỉnh sửa table product */
 .tableProductClass table{
+    position: absolute;
+    right: 40px;
     border: 1px #333 solid;
-    width: 100%;
+    width: 1600px;
+    z-index:-1;
 }
 /* chỉnh sửa nút */
 button {
@@ -69,8 +72,8 @@ div#tableSort{
   background-color: rgb(182, 238, 238);
   display: none;
   position: absolute;
-  left: 79.5%;
-  top:8.5%;
+  left: 245px;
+  top:170px;
 }
 /* chỉnh sửa ảnh */
 .aProduct td img{
@@ -80,11 +83,45 @@ div#tableSort{
 }
 
 /* chỉnh sửa bảng tìm kiếm */
-.tableSearch table{
+#showSearch table{
   border: 1px #333 solid;
   width: 1500px;
   position:absolute;
   top:500px;
   left: 210px;
   display: none;
+}
+/* thanh menu */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+.menu ul li {
+  width: 240px;
+  background: rgb(4 170 109);
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+
+.menu a {
+  display: block;
+}
+.menu ul{
+  padding: 0;
+  margin: 0;
+}
+.menu ul li:hover {
+  background: rgb(109, 221, 109);
+}
+.menu{
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  background-color: rgb(197, 196, 196);
 }

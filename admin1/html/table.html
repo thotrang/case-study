@@ -103,6 +103,16 @@
             </tr>
         </table>
     </div>
+    <!-- thanh menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="">TRANG CHỦ</a></li>
+            <li><a href="#" onclick="blockAdd()">ADD PRODUCT</a></li>
+            <li><a href="#" onclick="showSort()">SẮP XẾP</a></li>
+            <li><a href="#" onclick="showSearch()">TÌM KIẾM</a>
+        </ul>
+    </div>
+    <!-- bảng sản phẩm -->
     <div class="tableProductClass">
         <table>
             <thead>
@@ -113,7 +123,7 @@
                     <th>PRICE</th>
                     <th>AMOUNT</th>
                     <th></th>
-                    <th><button onclick="showSort()">SORT</button></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="tableProduct">
@@ -121,13 +131,12 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="4" onclick="blockAdd()">ADD PRODUCT</th>
-                    <th colspan="3">TÌM KIẾM</th>
+                    <th colspan="7"> </th>
                 </tr>
             </tfoot>
         </table>
     </div>
-    <div class="tableSearch">
+    <div id="showSearch">
         <table>
             <thead>
                 <tr>
@@ -137,16 +146,15 @@
                     <th>PRICE</th>
                     <th>AMOUNT</th>
                     <th></th>
-                    <th><button onclick="showSort()">SORT</button></th>
+                    <th></th>
                 </tr>
             </thead>
-            <tbody id="tableProduct">
+            <tbody id="tableSearch">
 
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="4" onclick="blockAdd()">ADD PRODUCT</th>
-                    <th colspan="3">TÌM KIẾM</th>
+                    <th colspan="7">TÌM KIẾM</th>
                 </tr>
             </tfoot>
         </table>

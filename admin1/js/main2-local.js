@@ -77,6 +77,7 @@ function editProduct(index) {
 }
 // xóa product
 function delProduct(index) {
+    let arrProduct = localStorage.getItem('list-product') ? JSON.parse(localStorage.getItem('list-product')) : []; //lấy dữ liệu về máy
     let x = confirm("bạn đồng ý xóa ");
     if (x == true) {
         arrProduct.splice(index, 1);
