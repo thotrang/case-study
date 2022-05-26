@@ -51,4 +51,30 @@ button {
     left: 40%;
     top:10%;
 }
+/*  */
+.aProduct td{
+  text-align: center;
+}
 
+.aProduct .nut{
+  padding-left: 100px;
+}
+/*  */
+.tableProductClass{
+  width: 1500px;
+  margin: 0 auto;
+}
+/* chỉnh sửa bảng sắp xếp */
+div#tableSort{
+  background-color: rgb(182, 238, 238);
+  display: none;
+  position: absolute;
+  left: 79.5%;
+  top:8.5%;
+}
+/* chỉnh sửa ảnh */
+.aProduct td img{
+  width: 80px;
+  height: 80px;
+  padding: 0;
+}

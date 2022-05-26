@@ -1,5 +1,5 @@
-let product1 = new Product('01', '..\img\ruou-bia\bia.png', '15000', 'Bia', '50');
-let product2 = new Product('02', '..\img\ruou-bia\ruou.png', '50000', 'Rượu', '50');
+let product1 = new Product('01', '../img/ruou-bia/bia.png', '15000', 'Bia', '50');
+let product2 = new Product('02', '../img/ruou-bia/ruou.png', '50000', 'Rượu', '50');
 let arrProduct = [product1, product2]
 showTable();
 // add product
@@ -10,7 +10,12 @@ function addProduct() {
     let price = document.getElementById("addPrice").value;
     let amount = document.getElementById("addAmount").value;
     let product = new Product(id, image, price, name, amount);
-    arrProduct.push(product);
+    if(id==''||name==''||image==''||price==''||amount==''){
+        alert("nhập thiếu dữ liệu")
+    }
+    else{
+        arrProduct.push(product);
+    }
     showTable();
     document.getElementById("tableAdd").style.display = 'none';
 }
@@ -21,13 +26,13 @@ function blockAdd() {
 function showTable() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
-        tableP += `<tr>
+        tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>
-                <td><a href="${arrProduct[i].image}"></a></td>zz
+                <td><img src="${arrProduct[i].image}"></img></td>
                 <td>${arrProduct[i].price}</td>
                 <td>${arrProduct[i].amount}</td>
-                <td><button id="edit" onclick="showEdit(${i})">Edit Product</button></td>
+                <td class="nut"><button id="edit" onclick="showEdit(${i})">Edit Product</button></td>
                 <td><button id="del" onclick="delProduct(${i})">Delete</button></td>
             </tr>`
     }
@@ -74,4 +79,3 @@ function delProduct(index) {
 //     document.getElementById("editImage").value='';
 //     console.log('1')
 // }
-

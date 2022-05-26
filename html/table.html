@@ -74,6 +74,36 @@
             </tr>
         </table>
     </div>
+    <!-- bảng sắp xếp -->
+    <div id="tableSort">
+        <table>
+            <tr>
+                <th colspan="2">SẮP XẾP SẢN PHẨM</th>
+            </tr>
+            <tr>
+                <td>ID:</td>
+                <td><select id="sortId" onchange="sortId()">
+                    <option value="big">Cao->Thấp</option>
+                    <option value="small">Thấp->Cao</option>
+                </select></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>Price:</td>
+                <td><select id="sortPrice" onchange="sortPrice()">
+                    <option value="big">Cao->Thấp</option>
+                    <option value="small">Thấp->Cao</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Amount:</td>
+                <td><select id="sortAmount" onchange="sortAmount()">
+                    <option value="big">Cao->Thấp</option>
+                    <option value="small">Thấp->Cao</option>
+                </select></td>
+            </tr>
+        </table>
+    </div>
     <div class="tableProductClass">
         <table>
             <thead>
@@ -84,7 +114,7 @@
                     <th>PRICE</th>
                     <th>AMOUNT</th>
                     <th></th>
-                    <th></th>
+                    <th><button onclick="showSort()">SORT</button></th>
                 </tr>
             </thead>
             <tbody id="tableProduct">
@@ -98,6 +128,7 @@
         </table>
     </div>
     <script src="..\js\product.js"></script>
+    <script src="..\js\sapxep.js"></script>
     <script src="..\js\main.js"></script>
 </body>
 
