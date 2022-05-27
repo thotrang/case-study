@@ -101,7 +101,41 @@ img{
       color: white;
       border-radius: 5px;
   }
-
-
-
+  /* sửa giỏ hàng */
+  .cart{
+    position: absolute;
+    left:500px;
+    top:200px;
+    background-color: rgb(138, 247, 165);
+    width: 1000px;
+    height: 600px;
+}
+button.x{
+    position: absolute;
+    right: 0;
+    background-color: #8af7a5;
+}
+/* sửa đăng nhập */
+.logIn{
+    right: 0px;
+    position: fixed;
+    top: 70px;
+    background-color: rgb(138, 247, 165);
+    width: 280px;
+    height: 400px;
+    border-radius: 5px;
+}
+div.nhap{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+div.nhap form .nut{
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
 
