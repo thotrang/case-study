@@ -1,10 +1,11 @@
-let product1 = new Product('01', '../img/ruou-bia/bia.png', '15000', 'Bia', '50');
+let product1 = new Product('01','../img/ruou-bia/bia.png', '15000', 'Bia', '50');
 let product2 = new Product('02', '../img/ruou-bia/ruou.png', '50000', 'Rượu', '50');
 let arrProduct = [product1, product2]
 
 showTable();
 // add product
 function addProduct() {
+    
     let id = document.getElementById("addId").value;
     let name = document.getElementById("addName").value;
     let image = document.getElementById("addImage").value;
@@ -16,12 +17,10 @@ function addProduct() {
     }
     else {
         arrProduct.push(product);
-    }
-    document.getElementById("tableAdd").style.display = 'none';
-
     localStorage.setItem('list-product', JSON.stringify(arrProduct));    //đưa mảng sản phẩm lên local storage
     showTable();
-
+    }
+    document.getElementById("tableAdd").style.display = 'none';
 }
 function blockAdd() {
     document.getElementById("tableAdd").style.display = 'block';
@@ -85,11 +84,4 @@ function delProduct(index) {
     localStorage.setItem('list-product', JSON.stringify(arrProduct));
     showTable();
 }
-// function clear(){
-//     document.getElementById("editId").value='';
-//     document.getElementById("editName").value='';
-//     document.getElementById("editPrice").value='';
-//     document.getElementById("editAmount").value='';
-//     document.getElementById("editImage").value='';
-//     console.log('1')
-// }
+

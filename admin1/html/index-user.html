@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="..\css\makeup.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\css\makeup-user.css">
     <link rel="stylesheet" href="..\css\normalize.css">
-    <link rel="stylesheet" href="..\css\table.css">
 </head>
 
 <body>
-<img src="../img/ruou-bia/bia.png" alt="">
     <!-- menu 1 -->
     <nav class="menu1">
          <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
@@ -30,45 +30,23 @@
         </div>
     </nav>
     <!-- menu 2 -->
-    <nav class="menu2"></nav>
+    <nav class="menu2">
+        <ul>
+            <li class="logo"> <a href="https://www.bachhoaxanh.com/"><img src="..\img\logo\logo1.png" > </a> </li>
+            <li class="textput"><input class="w3-input w3-border-0" type="text"></p></li>
+            <li class="gio"><a href="#" onclick="inPut()">Giỏ Hàng</a></li>
+            <li></li>
+            <li class="login"><a href="#" onclick="logIn()">Đăng Nhập</a></li>
+        </ul>
+    </nav>
     <div class="content">
-        <table class="product">
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
+        <table id="tableProduct" class="product">
         </table>
     </div>
     <div class="footer"></div>
 
-    <script src="..\js\product.js"></script>
-    <script src="..\js\main.js"></script>
+    <script src="..\js\product-user.js"></script>
+    <script src="..\js\main-user.js"></script>
 </body>
 
 </html>
