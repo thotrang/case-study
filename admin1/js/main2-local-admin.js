@@ -84,4 +84,7 @@ function delProduct(index) {
     localStorage.setItem('list-product', JSON.stringify(arrProduct));
     showTable();
 }
+function home(){
+    showTable()
+}
 

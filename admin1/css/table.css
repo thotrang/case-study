@@ -12,9 +12,11 @@
   tr:nth-child(even){background-color: #f2f2f2}
   
   th {
+    width: 200px;
     text-align: center;
     background-color: #04AA6D;
     color: white;
+    
   }
   div#tableAdd{
     background-color: rgb(182, 238, 238);
@@ -30,6 +32,29 @@
     border: 1px #333 solid;
     width: 1600px;
     z-index:-1;
+}
+/* chỉnh sửa bảng tìm kiếm */
+input#showSearch{
+  width: 250px;
+  position: absolute;
+  margin-left: 170px;
+  margin-top: -20px;
+}
+th#search{
+  text-align: right;
+  position: relative; 
+}
+#tableSearch{
+  background-color: #04AA6D;
+  display: none;
+  position: absolute;
+  right: 40px;
+  top:70px;
+  width: 190px;
+}
+#tableSearch table tr td{
+  background-color: #04AA6D;
+  text-align: center;
 }
 /* chỉnh sửa nút */
 button {
@@ -82,15 +107,6 @@ div#tableSort{
   padding: 0;
 }
 
-/* chỉnh sửa bảng tìm kiếm */
-#showSearch table{
-  border: 1px #333 solid;
-  width: 1500px;
-  position:absolute;
-  top:500px;
-  left: 210px;
-  display: none;
-}
 /* thanh menu */
 * {
   margin: 0;

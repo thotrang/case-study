@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="..\css\normalize.css">
     <link rel="stylesheet" href="..\css\table.css">
 </head>
@@ -82,34 +83,35 @@
             <tr>
                 <td>ID:</td>
                 <td><select id="sortId" onchange="sortId()">
-                    <option value="big">Cao->Thấp</option>
-                    <option value="small">Thấp->Cao</option>
-                </select></td>
+                        <option value="big">Cao->Thấp</option>
+                        <option value="small">Thấp->Cao</option>
+                    </select></td>
             </tr>
             <tr>
             <tr>
                 <td>Price:</td>
                 <td><select id="sortPrice" onchange="sortPrice()">
-                    <option value="big">Cao->Thấp</option>
-                    <option value="small">Thấp->Cao</option>
-                </select></td>
+                        <option value="big">Cao->Thấp</option>
+                        <option value="small">Thấp->Cao</option>
+                    </select></td>
             </tr>
             <tr>
                 <td>Amount:</td>
                 <td><select id="sortAmount" onchange="sortAmount()">
-                    <option value="big">Cao->Thấp</option>
-                    <option value="small">Thấp->Cao</option>
-                </select></td>
+                        <option value="big">Cao->Thấp</option>
+                        <option value="small">Thấp->Cao</option>
+                    </select></td>
             </tr>
         </table>
     </div>
     <!-- thanh menu -->
     <div class="menu">
         <ul>
-            <li><a href="#" onclick="">TRANG CHỦ</a></li>
+            <li><a href="#" onclick="home()">TRANG CHỦ</a></li>
             <li><a href="#" onclick="blockAdd()">ADD PRODUCT</a></li>
             <li><a href="#" onclick="showSort()">SẮP XẾP</a></li>
-            <li><a href="#" onclick="showSearch()">TÌM KIẾM</a>
+            <li></li>
+            <li></li>
         </ul>
     </div>
     <!-- bảng sản phẩm -->
@@ -122,13 +124,12 @@
                     <th>IMAGE</th>
                     <th>PRICE</th>
                     <th>AMOUNT</th>
-                    <th></th>
-                    <th></th>
+                    <th id="search"><input style="display:none ;" type="text" id="showSearch"
+                            class="w3-input w3-border-0"></th>
+                    <th><a href="#" onclick="showSearch()">TÌM KIẾM</a></th>
                 </tr>
             </thead>
-            <tbody id="tableProduct">
-
-            </tbody>
+            <tbody id="tableProduct"></tbody>
             <tfoot>
                 <tr>
                     <th colspan="7"> </th>
@@ -136,33 +137,25 @@
             </tfoot>
         </table>
     </div>
-    <div id="showSearch">
+    <div id="tableSearch">
         <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>IMAGE</th>
-                    <th>PRICE</th>
-                    <th>AMOUNT</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="tableSearch">
-
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="7">TÌM KIẾM</th>
-                </tr>
-            </tfoot>
+            <tr onclick="nameSearch()">
+                <td>NAME</td>
+            </tr>
+            <tr>
+            <tr onclick="priceSearch()">
+                <td>PRICE</td>
+            </tr>
+            <tr onclick="idSearch()">
+                <td>ID</td>
+            </tr>
         </table>
     </div>
-
     <script src="..\js\product-admin.js"></script>
+    <script src="..\js\tim-kiem-admin.js"></script>
     <script src="..\js\sapxep-admin.js"></script>
     <script src="..\js\main2-local-admin.js"></script>
+
 </body>
 
 </html>
