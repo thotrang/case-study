@@ -34,6 +34,7 @@
     <!-- menu 2 -->
     <nav class="menu2">
         <ul>
+            <li><a href="#" ><i class="fa-solid fa-house" onclick="home()" style="font-size: 25px;"></i></a></li>
             <li class="logo"> <a href="https://www.bachhoaxanh.com/"><img src="..\img\logo\logo1.png"> </a> </li>
             <li class="textput"><input class="w3-input w3-border-0" type="text" style="width: 300px;" id="textSearch"></p>
             </li>
@@ -49,10 +50,32 @@
         <button class="x" onclick="noneCart()" style="border: none;font-size: 25px;">
             <i class="fa-solid fa-circle-xmark"></i>
         </button>
-        <div id="cartProduct">
-
+        <div class="divCart">
+            <table class="tableCart">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>IMAGE</th>
+                        <th>PRICE</th>
+                        <th>AMOUNT</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cartProduct"></tbody>
+                <tfoot>
+                    <tr><th colspan="7">
+                    <button id="buyProduct" onclick="pay()">THANH TOÁN</button>
+                    </th></tr>
+                    <tr><td>Thành Tiền:</td>
+                        <td><p id="pay"></p></td>
+                    </tr>
+                    
+            </tfoot>
+            </table>
         </div>
-        <button id="buyProduct">MUA HÀNG</button>
+        
     </div>
     <div class="logIn" id="logIns" style="display:none ;">
         <button class="x" onclick="noneLogin()" style="border: none; font-size: 25px">
@@ -73,8 +96,7 @@
     <div class="content">
         <table id="tableProduct" class="product"></table>
     </div>
-    <div><input type="text" id="hungId"></div>
-    <div class="footer"></div>
+    
     <script src="..\js\product-user.js"></script>
     <script src="..\js\log-in-user.js"></script>
     <script src="..\js\cart-user.js"></script>

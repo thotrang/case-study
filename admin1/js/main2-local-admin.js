@@ -1,6 +1,11 @@
 let product1 = new Product('01','../img/ruou-bia/bia.png', '15000', 'Bia', '50');
 let product2 = new Product('02', '../img/ruou-bia/ruou.png', '50000', 'Rượu', '50');
-let arrProduct = [product1, product2]
+let product3 = new Product('03','../img/sua/sua-dalat.png','18000','Sữa Dalat','1000');
+let product4 = new Product('04','../img/sua/milo.png','20000','Sữa Milo','1000');
+
+let product5 = new Product('05','../img/do-hop/hop-ca-ngu.png','80000','Hộp cá ngừ','1000');
+
+let arrProduct = [product1, product2,product3,product4,product5]
 
 showTable();
 // add product

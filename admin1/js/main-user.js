@@ -16,3 +16,6 @@ function showTable() {
     document.getElementById("tableProduct").innerHTML = tableP;
 }
 showTable();
+function home(){
+    showTable();
+}

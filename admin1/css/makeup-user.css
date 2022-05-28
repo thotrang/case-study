@@ -16,6 +16,7 @@ body{
     width: 100%;
     height: 80px;
     top:0;
+    z-index: 2;
 }
 .menu2 ul li{
     display: inline-block;
@@ -33,13 +34,13 @@ body{
     height: 1220px;
     left: 570px;
     top:100px;
-    z-index:-1;
+    z-index:0;
     border-radius: 10px;
 }
 /* chỉnh sửa sản phẩm */
 .aProduct{
     width: 280px;
-    height: 370px;
+    height: 380px;
     background-color: rgb(191, 235, 191);
     display: inline-block;
     margin-top: 30px;
@@ -56,14 +57,14 @@ img{
     padding: 20px;
 }
 .name{
-    display: inline;
+    display: block;
+    margin: 0;
+    padding: 0;
     font-size: 25px;
     font-weight: 500;
 }
 .amount{
     display: inline;
-    padding:30px ;
-
 }
 /* sửa menu 2 */
 .menu2 ul {
@@ -88,7 +89,7 @@ img{
       left: 280px;
   }
   .menu2 ul li.login{
-      left:1100px;
+      left:1080px;
   }
   .menu2 ul li.gio{
     left:1000px;
@@ -108,11 +109,13 @@ img{
     top:200px;
     background-color: rgb(138, 247, 165);
     width: 1000px;
-    height: 600px;
+    height: auto;
+    z-index: 1;
 }
 button.x{
     position: absolute;
     right: 0;
+    top:0;
     background-color: #8af7a5;
 }
 /* sửa đăng nhập */
@@ -152,4 +155,30 @@ nav.menu2 ul li .buttonSearch{
     position: absolute;
     position: relative;
     left: 300px;
+}
+/* chỉnh sửa giỏ hàng */
+
+table.tableCart th{
+    width:180px;
+    height:40px;
+  background:#017f42;
+  
+}
+div.cart{
+   padding-top: 40px; 
+}
+.aProductCart{
+    text-align: center;
+}
+.aProductCart td #del{
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.aProductCart td img{
+    width: 100px;
+    height: 60px;
 }
