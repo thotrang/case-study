@@ -9,7 +9,7 @@ function showTable() {
                 <h3 class="name">${arrProduct[i].name}</h3>
                 <p class="amount">Số Lượng ${arrProduct[i].amount}</p>
                 <p class="price">Giá : ${arrProduct[i].price} đồng</p>
-                <button class="buy">Mua hàng</button>
+                <button class="buy" onclick="addInCart(${i})">Thêm Vào Giỏ</button>
                 </div>    
             </div>`
     }   

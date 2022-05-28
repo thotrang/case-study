@@ -88,7 +88,7 @@ img{
       left: 280px;
   }
   .menu2 ul li.login{
-      left:1200px;
+      left:1100px;
   }
   .menu2 ul li.gio{
     left:1000px;
@@ -138,4 +138,18 @@ div.nhap form .nut{
     border-radius: 5px;
     margin-top: 30px;
 }
-
+/* nut tìm kiếm */
+nav.menu2 ul li .buttonSearch{
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    position: relative;
+    left: 300px;
+}

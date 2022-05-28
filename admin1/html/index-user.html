@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="..\css\normalize.css">
+    <link rel="stylesheet" href="..\css\normalize.css">
     <link rel="stylesheet" href="..\css\makeup-user.css">
 
 </head>
@@ -17,7 +17,7 @@
 <body>
     <!-- menu 1 -->
     <nav class="menu1">
-         <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
             <a href="#" class="w3-bar-item w3-button">KHUYẾN MÃI HOT</a>
             <a href="#" class="w3-bar-item w3-button">HẢI SẢN CÁC LOẠI</a>
             <a href="#" class="w3-bar-item w3-button">RAU CỦ QUẢ TƯƠI</a>
@@ -34,17 +34,25 @@
     <!-- menu 2 -->
     <nav class="menu2">
         <ul>
-            <li class="logo"> <a href="https://www.bachhoaxanh.com/"><img src="..\img\logo\logo1.png" > </a> </li>
-            <li class="textput"><input class="w3-input w3-border-0" type="text" style="width: 300px;"></p></li>
-            <li class="gio"><a href="#" onclick="showCart()"><i style="font-size: 25px;" class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="logo"> <a href="https://www.bachhoaxanh.com/"><img src="..\img\logo\logo1.png"> </a> </li>
+            <li class="textput"><input class="w3-input w3-border-0" type="text" style="width: 300px;" id="textSearch"></p>
+            </li>
+            <li><button class="buttonSearch" onclick="search()">Tìm Kiếm</button></li>
+            <li class="gio"><a href="#" onclick="showCart()"><i style="font-size: 25px;"
+                        class="fa-solid fa-cart-shopping"></i></a></li>
             <li></li>
-            <li class="login"><a href="#" onclick="showlogIn()"><i style="font-size: 25px" class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li class="login"><a href="#" onclick="showlogIn()"><i style="font-size: 25px"
+                        class="fa-solid fa-right-to-bracket"></i></a></li>
         </ul>
     </nav>
     <div class="cart" id="carts" style="display:none ;">
         <button class="x" onclick="noneCart()" style="border: none;font-size: 25px;">
-            <i class="fa-solid fa-circle-xmark" ></i>
+            <i class="fa-solid fa-circle-xmark"></i>
         </button>
+        <div id="cartProduct">
+
+        </div>
+        <button id="buyProduct">MUA HÀNG</button>
     </div>
     <div class="logIn" id="logIns" style="display:none ;">
         <button class="x" onclick="noneLogin()" style="border: none; font-size: 25px">
@@ -58,19 +66,19 @@
                 <h2>Password:</h2>
                 <input type="password" class="w3-input w3-border-0" style="width: 200px;">
                 <input class="nut" type="button" value="Đăng nhập">
-                <input class="nut"  type="button" value="Đăng kí">
+                <input class="nut" type="button" value="Đăng kí">
             </form>
         </div>
     </div>
     <div class="content">
-        <table id="tableProduct" class="product">
-
-        </table>
+        <table id="tableProduct" class="product"></table>
     </div>
+    <div><input type="text" id="hungId"></div>
     <div class="footer"></div>
+    <script src="..\js\product-user.js"></script>
     <script src="..\js\log-in-user.js"></script>
     <script src="..\js\cart-user.js"></script>
-    <script src="..\js\product-user.js"></script>
+    <script src="..\js\tim-kiem-user.js"></script>
     <script src="..\js\main-user.js"></script>
 </body>
 
