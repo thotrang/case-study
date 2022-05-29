@@ -17,7 +17,8 @@ function priceSearch() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].price;
-        if (a == b) {
+        let result=b.includes(a);
+        if (result) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>
@@ -40,7 +41,8 @@ function idSearch() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].id;
-        if (a == b) {
+        let result=b.includes(a);
+        if (result) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>
@@ -63,7 +65,8 @@ function nameSearch() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].name;
-        if (a == b) {
+        let result=b.includes(a);
+        if (result) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>

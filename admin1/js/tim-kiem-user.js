@@ -1,10 +1,11 @@
-function search(){
+function search() {
     let arrProduct = localStorage.getItem('list-product') ? JSON.parse(localStorage.getItem('list-product')) : []; //lấy dữ liệu về máy
     let a = document.getElementById("textSearch").value;
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].name;
-        if (a == b) {
+        let result=b.includes(a);
+        if (result) {
             tableP += `<div class="aProduct">
             <img src="${arrProduct[i].image}" class="image" ></img>
             <div class="text">

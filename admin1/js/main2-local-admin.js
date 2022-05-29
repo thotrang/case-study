@@ -5,7 +5,7 @@ let product4 = new Product('04','../img/sua/milo.png','20000','Sữa Milo','1000
 
 let product5 = new Product('05','../img/do-hop/hop-ca-ngu.png','80000','Hộp cá ngừ','1000');
 
-let arrProduct = [product1, product2,product3,product4,product5]
+let arrProduct1 = [product1, product2,product3,product4,product5]
 
 showTable();
 // add product
@@ -21,8 +21,8 @@ function addProduct() {
         alert("nhập thiếu dữ liệu")
     }
     else {
-        arrProduct.push(product);
-    localStorage.setItem('list-product', JSON.stringify(arrProduct));    //đưa mảng sản phẩm lên local storage
+        arrProduct1.push(product);
+    localStorage.setItem('list-product', JSON.stringify(arrProduct1));    //đưa mảng sản phẩm lên local storage
     showTable();
     }
     document.getElementById("tableAdd").style.display = 'none';
@@ -85,6 +85,7 @@ function delProduct(index) {
     let x = confirm("bạn đồng ý xóa ");
     if (x == true) {
         arrProduct.splice(index, 1);
+        arrProduct1.splice(index,1);
     }
     localStorage.setItem('list-product', JSON.stringify(arrProduct));
     showTable();
