@@ -4,8 +4,11 @@ let product3 = new Product('03','../img/sua/sua-dalat.png','18000','Sữa Dalat'
 let product4 = new Product('04','../img/sua/milo.png','20000','Sữa Milo','1000');
 
 let product5 = new Product('05','../img/do-hop/hop-ca-ngu.png','80000','Hộp cá ngừ','1000');
-
-let arrProduct1 = [product1, product2,product3,product4,product5]
+let product6 = new Product('06','../img/do-hop/bate.png','80000','Hộp pate','1000');
+let product7 = new Product('07','../img/hai-san/cua.png','220000','Cua hoàng đế','1000');
+let product8 = new Product('08','../img/hai-san/ca.png','200000','Cá mú','1000');
+let product9 = new Product('09','../img/hai-san/muc.png','110000','Mực chúa','1000');
+let arrProduct1 = [product1, product2,product3,product4,product5,product6,product7,product8,product9]
 
 showTable();
 // add product

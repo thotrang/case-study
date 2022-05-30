@@ -17,8 +17,7 @@ function priceSearch() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].price;
-        let result=b.includes(a);
-        if (result) {
+        if (a == b) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>
@@ -41,8 +40,7 @@ function idSearch() {
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].id;
-        let result=b.includes(a);
-        if (result) {
+        if (a == b) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>
                 <td>${arrProduct[i].name}</td>
@@ -62,10 +60,12 @@ function nameSearch() {
     let arrProduct = localStorage.getItem('list-product') ? JSON.parse(localStorage.getItem('list-product')) : []; //lấy dữ liệu về máy
 
     let a = document.getElementById("showSearch").value;
+    let a1=a.toUpperCase();
     let tableP = ``;
     for (let i = 0; i < arrProduct.length; i++) {
         let b = arrProduct[i].name;
-        let result=b.includes(a);
+        let b1=b.toUpperCase();
+        let result=b1.includes(a1);
         if (result) {
             tableP += `<tr class="aProduct">
                 <td>${arrProduct[i].id}</td>

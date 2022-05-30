@@ -31,11 +31,12 @@ body{
     background-color: white;
     position: relative;
     width: 1050px;
-    height: 1220px;
+    height: auto;
     left: 570px;
     top:100px;
     z-index:0;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 /* chỉnh sửa sản phẩm */
 .aProduct{
