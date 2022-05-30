@@ -23,11 +23,11 @@ function sortPrice() {
     let x = document.getElementById("sortPrice").value;
     if (x == 'big') {
         arrProduct.sort(function (a, b) {
-            return b.id - a.id
+            return b.price - a.price
         })
     } else {
         arrProduct.sort(function (a, b) {
-            return a.id - b.id
+            return a.price - b.price
         })
     }localStorage.setItem('list-product', JSON.stringify(arrProduct));    //đưa mảng sản phẩm lên local storage
     showTable();
@@ -39,11 +39,11 @@ function sortAmount() {
     let x = document.getElementById("sortAmount").value;
     if (x == 'big') {
         arrProduct.sort(function (a, b) {
-            return b.id - a.id
+            return b.amount - a.amount
         })
     } else {
         arrProduct.sort(function (a, b) {
-            return a.id - b.id
+            return a.amount - b.amount
         })
     }localStorage.setItem('list-product', JSON.stringify(arrProduct));    //đưa mảng sản phẩm lên local storage
     showTable();
